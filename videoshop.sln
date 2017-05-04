@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "videoshop", "videoshop\videoshop.csproj", "{BAE1F600-8CAF-41BF-B38D-0BFF07FD0FA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "videoshop.Tests", "videoshop.Tests\videoshop.Tests.csproj", "{A3376917-0C12-48BC-9AFB-FDA194B94DBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAE1F600-8CAF-41BF-B38D-0BFF07FD0FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE1F600-8CAF-41BF-B38D-0BFF07FD0FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE1F600-8CAF-41BF-B38D-0BFF07FD0FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE1F600-8CAF-41BF-B38D-0BFF07FD0FA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3376917-0C12-48BC-9AFB-FDA194B94DBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3376917-0C12-48BC-9AFB-FDA194B94DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3376917-0C12-48BC-9AFB-FDA194B94DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3376917-0C12-48BC-9AFB-FDA194B94DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
