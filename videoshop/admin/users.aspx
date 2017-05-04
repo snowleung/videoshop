@@ -34,6 +34,7 @@
 	<![endif]-->
 </head>
 <body class="fixed-header ">
+    <form id="form1" runat="server">
     <!-- BEGIN SIDEBPANEL-->
     <nav class="page-sidebar" data-pages="sidebar">
       <!-- BEGIN SIDEBAR MENU TOP TRAY CONTENT-->
@@ -604,83 +605,35 @@
                 <table class="table table-hover demo-table-dynamic" id="tableWithDynamicRows">
                   <thead>
                     <tr>
-                      <th>App name</th>
-                      <th>Description</th>
-                      <th>Price</th>
-                      <th>Notes</th>
+                      <th>编号</th>
+                      <th>账号</th>
+                      <th>密码</th>
+                      <th>会员名</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server"  SelectCommand="select * from users" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\workspace\videoshop\videoshop\videoshop\App_Data\videoshop_demo.mdf;Integrated Security=True;Connect Timeout=30
+">
+                        </asp:SqlDataSource>
+<asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
+    <ItemTemplate>
+                            <tr>
                       <td class="v-align-middle">
-                        <p>Hyperlapse</p>
+                        <p><%#Eval("Id") %></p>
                       </td>
                       <td class="v-align-middle">
-                        <p>Description goes here</p>
+                        <p><%#Eval("account") %></p>
                       </td>
                       <td class="v-align-middle">
-                        <p>FREE</p>
+                        <p><%#Eval("userpwd") %></p>
                       </td>
                       <td class="v-align-middle">
-                        <p>Notes go here</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="v-align-middle">
-                        <p>Facebook</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Description goes here</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>FREE</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Notes go here</p>
+                        <p><%#Eval("nickname") %></p>
                       </td>
                     </tr>
-                    <tr>
-                      <td class="v-align-middle">
-                        <p>Twitter</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Description goes here</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>FREE</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Notes go here</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="v-align-middle">
-                        <p>Foursquare</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Description goes here</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>FREE</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Notes go here</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="v-align-middle">
-                        <p>Angry Birds</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Description goes here</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>FREE</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Notes go here</p>
-                      </td>
-                    </tr>
+    </ItemTemplate>
+</asp:Repeater>           
                   </tbody>
                 </table>
               </div>
@@ -1998,11 +1951,7 @@
     <script src="assets/js/datatables.js" type="text/javascript"></script>
     <script src="assets/js/scripts.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS -->
-        <form id="form2" runat="server">
-    <div>
-    
-    </div>
-    </form>
+ </form>
   </body>
 
 
