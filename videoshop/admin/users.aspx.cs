@@ -9,10 +9,13 @@ namespace videoshop.admin
 {
     public partial class users : System.Web.UI.Page
     {
-        private int sdf = 10;
         protected void Page_Load(object sender, EventArgs e)
         {
+            string nickName = Request.QueryString["nickname"];
+            if (nickName != null) {
+                SqlDataSource1.SelectCommand = "select * from users where nickname='" + nickName + "'";
 
+            }
         }
     }
 }

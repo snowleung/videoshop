@@ -34,7 +34,7 @@
 	<![endif]-->
 </head>
 <body class="fixed-header ">
-    <form id="form1" runat="server">
+  
     <!-- BEGIN SIDEBPANEL-->
     <nav class="page-sidebar" data-pages="sidebar">
       <!-- BEGIN SIDEBAR MENU TOP TRAY CONTENT-->
@@ -593,15 +593,23 @@
               <div class="panel-heading">
                 <div class="panel-title">会员列表
                 </div>
+                  <form method="get">
                 <div class="pull-right">
                   <div class="col-xs-12">
-                    <button id="show-modal" class="btn btn-primary btn-cons"><i class="fa fa-plus"></i> Add row
+                    <input type="text" id="search-table" name="nickname" class="form-control pull-right" placeholder="Search">
+                  </div>
+                </div>
+             <div class="pull-right">
+                  <div class="col-xs-12">
+                    <button id="show-modal" class="btn btn-primary btn-cons"><i class="fa fa-plus"></i> Search
                     </button>
                   </div>
                 </div>
+                      </form>
                 <div class="clearfix"></div>
               </div>
               <div class="panel-body">
+                    <form id="form1" runat="server">
                 <table class="table table-hover demo-table-dynamic" id="tableWithDynamicRows">
                   <thead>
                     <tr>
