@@ -642,7 +642,7 @@
                   </thead>
                   <tbody>
 
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server"  SelectCommand="select * from users" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Study code\videoshop\videoshop\App_Data\videoshop_demo.mdf;Integrated Security=True;Connect Timeout=30
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server"  SelectCommand="select * from users" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\coooode\videoshop\videoshop\App_Data\videoshop_demo.mdf;Integrated Security=True;Connect Timeout=30
 ">
                         </asp:SqlDataSource>
 <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
